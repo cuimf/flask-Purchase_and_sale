@@ -47,7 +47,7 @@ flask实现的简单进销存后台管理系统
 #clone项目到本地
 https://github.com/agamgn/flask-Purchase_and_sale.git
 #安装依赖
-pip install -r requirement.txt
+pip install -r requirement.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 #运行sql
 #启动项目
 python manage.py runserver

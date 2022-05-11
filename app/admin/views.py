@@ -931,7 +931,7 @@ def wjmm():
         mails.append(form.data['account'])
         try:
             msg = Message('修改密码通知', sender='gchase@163.com', recipients=mails)
-            msg.html = '<span>尊敬的</span>'+usermessage.user_name+'，您好：<br>您在we商贸中申请找回密码<br><b style="background-color: #FF0000">重设密码已完成,若非本人操作</b><br>请及时联系管理员修改<b>ganiner@163.com</b>'
+            msg.html = '<span>尊敬的</span>'+usermessage.user_name+'，您好：<br>您在供应链管理平台中申请找回密码<br><b style="background-color: #FF0000">重设密码已完成,若非本人操作</b><br>请及时联系管理员修改<b>ganiner@163.com</b>'
             mail.send(msg)
             flash("修改成功")
             db.session.commit()

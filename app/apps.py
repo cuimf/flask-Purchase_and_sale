@@ -7,20 +7,20 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_mail import Mail
 
-app=Flask(__name__)
+app = Flask(__name__)
 
 
 # 数据库配置
 app.config["SQLALCHEMY_DATABASE_URI"]="mysql+pymysql://user:password@127.0.0.1:3306/dbname?charset=utf8"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=True
 # 密钥配置，在生产环境中使用系统自动生成
-app.config['SECRET_KEY']='d890fbe7e26c4c3eb557b6009e3f4d3d'
+app.config['SECRET_KEY'] = 'd890f8e7e26c4c3eb55790009e3f4d3d'
 
 # 调试开关，生产环境是关闭的
-app.debug=True
+app.debug = True
 
 # 注册数据模型
-db=SQLAlchemy(app)
+db = SQLAlchemy(app)
 
 
 
