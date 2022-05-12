@@ -37,7 +37,7 @@ def get_verify_code():
     # 图片大小120×50
     width, height = 120, 50
     # 新图片对象
-    im = Image.new('RGB',(width, height),'white')
+    im = Image.new('RGB',(width, height), 'white')
     # 字体
     font = ImageFont.truetype('app/static/fonts/arial.ttf', 40)
     # draw对象
