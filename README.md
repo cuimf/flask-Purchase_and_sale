@@ -54,3 +54,8 @@ python manage.py runserver
 #默认超级管理员
 root:root
 ```
+
+# Windows 需要修改time.clock方法
+if win32 or jython:
+    time_func = time.perf_counter()
+    #time_func = time.clock
